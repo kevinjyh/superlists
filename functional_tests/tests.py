@@ -55,8 +55,8 @@ class NewVisitorTest(LiveServerTestCase):
         inputbox.send_keys(Keys.ENTER)
 
         # The page updates again, and now shows both items on her list
-        self.check_for_row_in_list_table('1: Buy peacock feathers')
         self.check_for_row_in_list_table('2: Use peacock feathers to make a fly')
+        self.check_for_row_in_list_table('1: Buy peacock feathers')
 
         # 在新的使用者Francis來到網站。
 
@@ -73,7 +73,7 @@ class NewVisitorTest(LiveServerTestCase):
 
         # Francis輸入一個新的項目，做出一個新的清單。
         # 他比Edith無趣...
-        inputbox = self.find_element_by_id('id_new_item')
+        inputbox = self.browser.find_element_by_id('id_new_item')
         inputbox.send_keys('Buy milk')
         inputbox.send_keys(Keys.ENTER)
 
