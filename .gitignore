@@ -5,5 +5,8 @@ __pycache__
 *.log
 .vscode/
 *.jpg
+*.png
 venv/
+參考資料/
 src/webpy
+.bashrc

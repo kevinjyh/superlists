@@ -71,7 +71,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
         # The page updates again, and now shows both items on her list
         self.wait_for_row_in_list_table('2: Use peacock feathers to make a fly')
         self.wait_for_row_in_list_table('1: Buy peacock feathers')
-
+        
         # Satisfied, she goes back to sleep
 
 
@@ -120,7 +120,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
 
         # Satisfied, they both go back to sleep
 
-
+    
     def test_layout_and_styling(self):
         # Edith goes to the home page
         self.browser.get(self.live_server_url)
