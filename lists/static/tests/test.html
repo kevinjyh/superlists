@@ -20,9 +20,6 @@
     <script src="qunit-2.9.2.js"></script>
 
     <script>
-
-        console.log('qunit tests start');
-
         QUnit.test("errors should be hidden on keypress", function (assert) {
             initialize();
             $('input[name="text"]').trigger('keypress');
